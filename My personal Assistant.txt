@@ -1,0 +1,44 @@
+import pyttsx3
+import os
+
+pyttsx3.speak("HELLO ! HOW CAN I HELP YOU")
+while True:
+	pyttsx3.speak("Tell me what can I do for you")
+	print("Tell me what can I do for you:-",end= ' ')
+	p=input()
+
+	if(("run" in p) or ("start" in p) or ("open" in p)) and (("chrome" in p) or ("google chrome" in p)):
+		pyttsx3.speak("your chrome is opening wait for a moment")
+		os.system("chrome")
+		pyttsx3.speak("Thank you for using chrome")
+	
+	elif(("run" in p)or ("start" in p)or ("open" in p)) and ("notepad" in p):
+		pyttsx3.speak("your notepad is opening")
+		os.system("notepad")
+		pyttsx3.speak("Thank you for using notepad")
+	
+	elif(("run" in p)or ("start" in p)or ("open" in p)) and ("vlc" in p):
+		pyttsx3.speak("your vlc is opening ")
+		os.system("vlc")
+		pyttsx3.speak("Thank you for using vlc")
+	
+	elif(("run" in p)or ("start" in p)or ("open" in p)) and ("matlab"in p):
+		pyttsx3.speak("your matlab is opening ")
+		os.system("matlab")
+		pyttsx3.speak("Thank you for using Matlab")
+	
+	
+	elif(("run" in p)or ("start" in p)or ("open" in p)) and ("wmplayer" in p):
+		pyttsx3.speak("your wmplayer is opening")
+		os.system("wmplayer")
+		pyttsx3.speak("Thank you for using wmplayer")
+
+	elif("exit" in p) or("stop" in p):
+		pyttsx3.speak("Thank you for working with me.")
+		pyttsx3.speak("Have a nice day")
+		print("Thank you for working with me have a nice day")
+		break	
+		
+	else:
+		pyttsx3.speak("This function dont support me")
+		print("dont support")
